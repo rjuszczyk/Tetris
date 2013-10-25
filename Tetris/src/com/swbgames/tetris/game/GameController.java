@@ -33,6 +33,9 @@ public class GameController {
 	public Board getBoard() {
 		return this.board;
 	}
+	public Block getCurrentBlock() {
+		return this.currentBlock;
+	}
 	Random r = new Random();
 	public void generateNextBlock() {
 		//TODO: to trza zmienic

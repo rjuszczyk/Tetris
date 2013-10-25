@@ -21,6 +21,14 @@ public class Board {
 	public List<Position> getBlocks() {
 		return this.blocks;
 	}
+	
+	public int getWidth() {
+		return width;
+	}
+	public int getHeight() {
+		return height;
+	}		
+	
 	public void addBlock(Block block) {
 		blocks.addAll(block.getGlobalBlockPoints());
 		lastAdded.clear();
