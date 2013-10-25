@@ -13,9 +13,12 @@ public abstract class Block {
 	 */
 	public void setPosition(int x, int y) {
 		this.position.setX(x);
-		this.position.setX(y);
+		this.position.setY(y);
 	}
-	
+	public void move(Position move) {
+		this.position.setX(this.position.getX() + move.getX());
+		this.position.setY(this.position.getY() + move.getY());
+	}
 	/**
 	 * Ustawia pozycjê bloku w przestrzeni globalnej
 	 * @param position nowa pozycja
